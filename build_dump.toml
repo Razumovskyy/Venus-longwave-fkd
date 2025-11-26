@@ -1,0 +1,111 @@
+package-name = "FKDMVenusLW"
+fortran-flags = " -Wall -Wextra -fPIC -fmax-errors=1 -g -fcheck=bounds -fcheck=array-temps -fbacktrace -fcoarray=single"
+c-flags = ""
+cxx-flags = ""
+link-flags = ""
+build-prefix = "build/gfortran"
+include-dirs = [ ]
+link-libraries = [ ]
+external-modules = [ ]
+include-tests = false
+module-naming = false
+[compiler]
+id = 1
+fc = "gfortran"
+cc = "gcc"
+cxx = "g++"
+echo = false
+verbose = false
+[archiver]
+ar = "ar -rs "
+use-response-file = false
+echo = false
+verbose = false
+[deps]
+unit = 6
+verbosity = 1
+dep-dir = "build/dependencies"
+cache = "build/cache.toml"
+ndep = 1
+[deps.dependencies]
+[deps.dependencies.FKDMVenusLW]
+name = "FKDMVenusLW"
+path = "."
+version = "0.1.0"
+proj-dir = "./."
+done = true
+update = false
+cached = false
+[packages]
+[packages.FKDMVenusLW]
+name = "FKDMVenusLW"
+version = "0.1.0"
+module-naming = false
+[packages.FKDMVenusLW.preprocess]
+[packages.FKDMVenusLW.fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+[packages.FKDMVenusLW.sources]
+[packages.FKDMVenusLW.sources.src_1]
+file-name = "././src/planck.f90"
+digest = 4271124106824943553
+unit-scope = "FPM_SCOPE_LIB"
+unit-type = "FPM_UNIT_UNKNOWN"
+modules-provided = [ ]
+parent-modules = [ ]
+modules-used = [ ]
+include-dependencies = [ ]
+link-libraries = [ ]
+[packages.FKDMVenusLW.sources.src_2]
+file-name = "././src/kd_data.f90"
+digest = 3925208436993999582
+unit-scope = "FPM_SCOPE_LIB"
+unit-type = "FPM_UNIT_MODULE"
+modules-provided = "kd_data"
+parent-modules = [ ]
+modules-used = [ ]
+include-dependencies = [ ]
+link-libraries = [ ]
+[packages.FKDMVenusLW.sources.src_3]
+file-name = "././src/co2_corr.f90"
+digest = -7537802856320298975
+unit-scope = "FPM_SCOPE_LIB"
+unit-type = "FPM_UNIT_UNKNOWN"
+modules-provided = [ ]
+parent-modules = [ ]
+modules-used = [ ]
+include-dependencies = [ ]
+link-libraries = [ ]
+[packages.FKDMVenusLW.sources.src_4]
+file-name = "././src/atm.f90"
+digest = -3413603974277146686
+unit-scope = "FPM_SCOPE_LIB"
+unit-type = "FPM_UNIT_MODULE"
+modules-provided = "atmospheres"
+parent-modules = [ ]
+modules-used = [ ]
+include-dependencies = [ ]
+link-libraries = [ ]
+[packages.FKDMVenusLW.sources.src_5]
+file-name = "././src/vac.f90"
+digest = -1447438522160176737
+unit-scope = "FPM_SCOPE_LIB"
+unit-type = "FPM_UNIT_UNKNOWN"
+modules-provided = [ ]
+parent-modules = [ ]
+modules-used = [ ]
+include-dependencies = [ ]
+link-libraries = [ ]
+[packages.FKDMVenusLW.sources.src_6]
+file-name = "app/main.f90"
+exe-name = "FKDMVenusLW"
+digest = -2294984059092111451
+unit-scope = "FPM_SCOPE_APP"
+unit-type = "FPM_UNIT_PROGRAM"
+modules-provided = [ ]
+parent-modules = [ ]
+modules-used = [ ]
+include-dependencies = [ ]
+link-libraries = [ ]
+
