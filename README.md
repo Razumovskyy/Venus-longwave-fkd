@@ -1,4 +1,4 @@
-# Venus Longwave FKDM K-Distribution
+# Venus Longwave flux-fitting _k_-Distribution
 
 Venus longwave (10–6000 cm-1) absorption parameterization used here to speed up radiative transfer. CO2, H2O, and SO2 absorption is mapped to 32 effective cross-sections; A 32-point k-solution covers the band with errors targetted to be within a few percent versus the reference Monte Carlo model below 90 km.
 
